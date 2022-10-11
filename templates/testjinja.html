@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> {{ rez }} </h1>
+
+<table border="1" width="100">
+    {% for element in rez %}
+        <tr>
+            {% for number in element %}
+                    <td>
+                        {{ number }}
+                    </td>
+            {% endfor %}
+
+        </tr>
+    {% endfor %}
+</table>
+
+
+{% set fruit = 'apple' %}
+{{fruit}}
+
+
+
+</body>
+</html>

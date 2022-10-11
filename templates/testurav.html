@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .h {
+            text-align:center;
+        }
+
+        .otvet {
+            text-align:center;
+            color:red;
+            font-size: 14px;
+        }
+
+        .form {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<H1 class="h">Решение уравнения вида Ax=B</H1>
+<div class="form">
+    <!-- <form method="get" action="/testurav/otvet"> -->
+    <form method="post" action="/testurav/otvet">
+        A: <input type="text" name="aaa"><br><br>
+        B: <input type="text" name="bbb"><br><br>
+        <input type="submit" value="Вычислить">
+    </form>
+
+    {{otvet}}
+</div>
+</body>
+</html>

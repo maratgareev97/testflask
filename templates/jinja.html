@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% set fruit = 'apple' %}
+{{fruit}}<br>
+{{rez}}<br>
+
+<table border="1" width="100">
+    {% for user in rez %}
+    <tr>
+        <td>
+            {{ user }}
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+<!--items() доступ к словарю-->
+<ul>
+    {% for key,value in slovar.items() %}
+    <li>{{ key }} : {{ value }}</li>
+    {% endfor %}
+</ul>
+
+<table border="1" width="100">
+    <tr>
+        {% for user in rez %}
+        <td>
+            {{ user }}
+        </td>
+        {% endfor %}
+    </tr>
+</table>
+
+{{sam}}
+
+<table cellspacing="2" border="1" cellpadding="5">
+    {% for row in sam %}
+    <tr>
+        {% for value in row %}
+            <td>{{ value }}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
